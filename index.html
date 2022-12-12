@@ -1,4 +1,7 @@
 <!DOCTYPE HTML>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r95/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.16/vanta.waves.min.js"></script>
 <!--
 	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
@@ -11,11 +14,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
-<script>
-  VANTA.WAVES('#intro')
-</script>
 	</head>
 	<body class="is-preload">
 
@@ -47,7 +45,24 @@
 							</ul>
 						</div>
 					</section>
-
+      <script>
+        const effect = VANTA.WAVES({
+          el: "#intro",
+          mouseControls: true,
+          touchControls: true,
+          minHeight: 400.0,
+          minWidth: 400.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          waveHeight: 20.0,
+          color: 0x50409a,
+          waveSpeed: 0.5,
+        });
+        //horizon scrollbar fix... sort of.
+        window.onload = function () {
+          window.dispatchEvent(new Event("resize"));
+        };
+      </script>
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<section>
