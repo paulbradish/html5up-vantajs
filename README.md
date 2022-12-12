@@ -2,7 +2,7 @@
 
 This is a working demo of HTML5up.net's Hyperspace HTML5 theme and Vanta.js' animated waves background (hosted on CDN). Enjoy!
 
-demo: [html5up-vantajs.github.io](https://html5up-vantajs.github.io)
+demo: [https://paulbradish.github.io/html5up-vantajs/](https://paulbradish.github.io/html5up-vantajs/)
 
 <img src="/images/html5up-vantajs.png">
 
